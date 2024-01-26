@@ -6,7 +6,7 @@ npm install
 
 In the project directory, you can run:
 
-### `npm start`
+`npm start`
 
 
 ## you can see my Live view 
