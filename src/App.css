@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toolbar {
+  position: absolute;
+  margin-top: 5px;
+  padding: 5px;
+  font: inherit;
+  width: 35%;
+  background-color: #dfdddd;
+  top: 0;
+  left: 45%;
+  transform: translateX(-50%);
+  padding: 12px;
+  position: sticky;
+  z-index: 100;
+  border: none;
+  border-radius: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.toolbar button {
+  margin-right: 12px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.toolbar input {
+  margin-right: 10px;
+}
+
+.file-upload-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.file-upload-label input {
+  display: none;
+}
+
+.uploaded-file {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+.excel-content {
+  margin: 0px 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.excel-sheet {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
 }
